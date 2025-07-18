@@ -1,0 +1,41 @@
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-grey: #C7C7C7;
+    --color-dark-grey: #222222;
+    --color-black: #000000;
+    --color-yellow: #D3E97A;
+
+    --container-width: 1224px;
+    --container-padding-x: 108px;
+
+    --font-family-base: "Bebas Neue", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--font-family-base), sans-serif;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid var(--color-grey);
+    cursor: pointer;
+    background-color: var(--color-dark-grey);
+}
