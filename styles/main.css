@@ -17,6 +17,11 @@
 
 .intro__about {
     display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro__about-header:hover {
+    transform: scale(1.05);
 }
 
 .section-header {
@@ -44,10 +49,15 @@
     height: 54px;
 }
 
+.intro__about-link:hover {
+    background-color: var(--color-black);
+}
+
 .intro__photo-wrapper {
     max-width: 600px;
     display: flex;
     justify-content: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .intro__photo {
@@ -56,15 +66,30 @@
     border-radius: 10px;
 }
 
+.intro__photo:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width: 1050px) {
     .section-header {
         font-size: 80px;
     }
 }
 
-.about {
+.animated {
     padding-top: 122px;
     padding-bottom: 372px;
+}
+
+.animated {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animated.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about__wrapper {

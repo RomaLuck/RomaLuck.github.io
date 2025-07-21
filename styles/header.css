@@ -4,7 +4,6 @@
     left: 0;
     width: 100%;
     z-index: 99;
-    background-color: var(--color-black);
 }
 
 .header__wrapper {
@@ -30,4 +29,10 @@
 
 .header_menu-item {
     font-size: 16px;
+}
+
+@media (max-width: 1400px) {
+    .header {
+        background-color: var(--color-black);
+    }
 }

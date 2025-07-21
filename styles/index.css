@@ -27,7 +27,6 @@ body {
     background-color: var(--color-black);
     color: var(--color-white);
     font-family: var(--font-family-base), sans-serif;
-    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
 }
 
 .button {
